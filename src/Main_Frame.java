@@ -178,7 +178,8 @@ public class Main_Frame extends JFrame implements ActionListener {
 		}
 
 		if (e.getSource() == btnOrder) {
-			JOptionPane.showMessageDialog(this, "    =====CubeM Cafe=====\n\n" + "The total amount to be paid is:"
+			JOptionPane.showMessageDialog(this, "    =====CubeM Cafe=====\n\n"
+					+ "The total amount to be paid is:"
 					+ total + "\n\n    Please do visit again.");
 
 		}

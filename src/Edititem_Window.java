@@ -83,7 +83,8 @@ public class Edititem_Window extends JFrame implements ActionListener {
             if (txtItemId.getText().equals("") || txtItemName.getText().equals("") || txtPrice.equals("")) {
                 JOptionPane.showMessageDialog(this, "Please do not leave any empty fields."); //
             } else {
-                Main_Frame.tree.insert(new Menu_Item(Integer.parseInt(txtItemId.getText()), txtItemName.getText(),Double.parseDouble(txtPrice.getText())));
+                Main_Frame.tree.insert(new Menu_Item(Integer.parseInt(txtItemId.getText()), txtItemName.getText(),
+                        Double.parseDouble(txtPrice.getText())));
                 Main_Frame.dlmMenu.clear();
                 Main_Frame.tree.inorder(Main_Frame.tree.root);
                 this.setVisible(false);

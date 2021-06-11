@@ -86,7 +86,7 @@ public class EditEmployee_Window extends JFrame implements ActionListener {
 				Login.list.insert(new Employee(txtId.getText(), txtNameSurname.getText(), txtPw.getText(),
 						Double.parseDouble(txtWage.getText()))); // By using LinkedList class's insert method
 				this.setVisible(false); // add new element to the list
-				 new ManageEmployees_Window().setVisible(true); //
+				new ManageEmployees_Window().setVisible(true); //
 			}
 		}
 
