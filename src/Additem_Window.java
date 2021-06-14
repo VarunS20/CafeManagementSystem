@@ -72,7 +72,7 @@ public class Additem_Window extends JFrame implements ActionListener {
 				Main_Frame.dlmMenu.clear(); // updates the list
 				Main_Frame.tree.inorder(Main_Frame.tree.root); // updates the list
 				this.setVisible(false);
-				new ManageEmployees_Window().setVisible(true);
+				new ManageMenu_Window().setVisible(true);
 			}
 		}
 
