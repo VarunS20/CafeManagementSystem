@@ -23,6 +23,7 @@ public class BinarySearchTree {
 
 	// This method mainly calls insertRec()
 	void insert(Menu_Item item) {
+		size++;
 		root = insertRec(root, item);
 	}
 
