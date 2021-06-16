@@ -1,3 +1,8 @@
+/*
+Author: SDMCET-2020-2021-B5
+Description: Class which implements login frame along with main 
+*/  
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -9,7 +14,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
-
+// Login class 
 public class Login extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
@@ -20,6 +25,7 @@ public class Login extends JFrame implements ActionListener {
 	static LinkedList list = new LinkedList();
 
 	public Login() {
+		//constructor of login class
 		super("Cafe Managemet System -Login-");
 		setSize(350, 225);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -97,9 +103,9 @@ public class Login extends JFrame implements ActionListener {
 		list.insert(new Manager("0002", "Manager", "1234", 1800.0));
 		list.insert(new Employee("0003", "Employee2", "1234", 1600.0));
 	}
-
+	
 	public static void main(String[] args) {
-
+		// main function which calls login frame
 		Login login = new Login();
 		login.setVisible(true);
 	}
