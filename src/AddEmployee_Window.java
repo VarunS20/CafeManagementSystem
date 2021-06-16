@@ -8,7 +8,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+/*Author:
+Date:27-05-2021
+Class:AddEmployee_Window
+*/
 
+//AddEmployee_Window class helps in adding the employee details in the linkedList
 public class AddEmployee_Window extends JFrame implements ActionListener {
 
 	private static final long serialVersionUID = 1L;
@@ -20,7 +25,7 @@ public class AddEmployee_Window extends JFrame implements ActionListener {
 	JButton btnClear;
 
 	LinkedList newList = Login.list;
-
+//Constructor
 	public AddEmployee_Window() {
 
 		super("Cafe Managemnt System -Employee Management-");
