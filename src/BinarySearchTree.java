@@ -1,22 +1,25 @@
-
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which implements roots for BST and all the methods related to BST
+*/
 public class BinarySearchTree {
 
 	TreeNode root;
 	int size;
-
+	// constructor
 	public BinarySearchTree() { // Creates default binary tree
 		root = null;
 		size = 0;
 	}
-
+	// creates a new node
 	public TreeNode createNewNode(Menu_Item item) {
 		return new TreeNode(item);
 	}
-
+	// return the number of elements in the BST
 	public int getSize() {
 		return size;
 	}
-
+	// returns the root 
 	public TreeNode getRoot() {
 		return root;
 	}
@@ -83,7 +86,7 @@ public class BinarySearchTree {
 
 		return root;
 	}
-
+	// returns minimum value in BST
 	int minValue(TreeNode root) {
 		int minv = root.item.id;
 		while (root.left != null) {

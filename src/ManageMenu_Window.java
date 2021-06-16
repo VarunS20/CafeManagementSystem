@@ -1,3 +1,7 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which manages add,delete,update functionalities the menu item
+*/
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,7 +17,7 @@ public class ManageMenu_Window extends JFrame implements ActionListener {
 	JList listMenuEdit = new JList(dlmMenuEdit);
 	JScrollPane spMenuEdit = new JScrollPane(listMenuEdit);
 	JButton btnDeleteItem, btnEditItem, btnAddItem;
-
+	// constructor
 	public ManageMenu_Window() {
 		super("Cafe Managemnt System");
 		setSize(684, 448);
@@ -40,7 +44,7 @@ public class ManageMenu_Window extends JFrame implements ActionListener {
 		btnDeleteItem.addActionListener(this);
 		btnEditItem.addActionListener(this);
 	}
-
+	// description of the action performed on the button
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnAddItem) {
@@ -71,20 +75,8 @@ public class ManageMenu_Window extends JFrame implements ActionListener {
 				this.setVisible(false);
 
 
-
-				// new Additem_Window().setVisible(true);
-				// this.setVisible(false);
-
-				// new Additem_Window().setVisible(true);
-				// Additem_Window.showEditItem(currentItem.id, currentItem.name,
-				// currentItem.price);
-				// this.setVisible(false);
-
 			}
-			// new Additem_Window().setVisible(true);
-			// Additem_Window.showEditItem(currentItem.id, currentItem.name,
-			// currentItem.price);
-			// dlmMenuEdit.setElementAt(currentItem, index);
+			
 		}
 
 	}

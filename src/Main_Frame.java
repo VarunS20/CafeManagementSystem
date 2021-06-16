@@ -1,3 +1,7 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which implements main frame window which appears after successful login
+*/
 import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
@@ -12,9 +16,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 
 public class Main_Frame extends JFrame implements ActionListener {
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 	JButton btnOrder, btnManageEmployees, btnManageMenu, btnAll, btnMain, btnDrink, btnDessert, btnExit, btnAdd,
 			btnDelete;
@@ -30,7 +32,7 @@ public class Main_Frame extends JFrame implements ActionListener {
 	JScrollPane spOrder = new JScrollPane(listOrder);
 
 	static BinarySearchTree tree = new BinarySearchTree();
-
+	// constructor
 	public Main_Frame(Employee em) {
 		super("Cafe Managemnt System -Employee-");
 		setSize(985, 600);
@@ -79,7 +81,7 @@ public class Main_Frame extends JFrame implements ActionListener {
 		btnDessert.addActionListener(this);
 
 	}
-
+	// sets the button appearence
 	public void setButtons() {
 
 		btnOrder = new JButton("Order");
@@ -124,7 +126,7 @@ public class Main_Frame extends JFrame implements ActionListener {
 		btnExit.setBounds(843, 10, 85, 43);
 		getContentPane().add(btnExit);
 	}
-
+	// performs actions of the buttons
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnManageEmployees) {

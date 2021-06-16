@@ -1,3 +1,7 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which requests and add item inforamtion to the BST
+*/
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -7,9 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-/*Date: 29-05-2021
-Class:Additem_Window
-*/
 
 //Additem_Window class helps in adding the items using BST 
 public class Additem_Window extends JFrame implements ActionListener {

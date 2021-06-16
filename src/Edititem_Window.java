@@ -1,3 +1,8 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which edits the details of the existing items
+*/
+
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -61,20 +66,11 @@ public class Edititem_Window extends JFrame implements ActionListener {
         btnUpd = new JButton("Update");
         btnUpd.setBounds(88, 198, 85, 21);
         getContentPane().add(btnUpd);
-
-        // btnClear = new JButton("Clear");
-        // btnClear.setBounds(183, 198, 85, 21);
-        // getContentPane().add(btnClear);
-
         btnUpd.addActionListener(this);
-        // btnClear.addActionListener(this);
+
     }
 
-    // static void showEditItem(int id, String name, double price) {
-    // txtItemId.setText(Integer.toString(id));
-    // txtItemName.setText(name);
-    // txtPrice.setText(Double.toString(price));
-    // }
+
 
     @Override
     public void actionPerformed(ActionEvent e) {

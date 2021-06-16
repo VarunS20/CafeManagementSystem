@@ -1,3 +1,7 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which manages add,delete,update functionalities the Employee and generates a Employee window 
+*/
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,9 +13,6 @@ import javax.swing.JButton;
 
 public class ManageEmployees_Window extends JFrame implements ActionListener {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	JButton btnAdd;
 	JButton btnDelete;
@@ -22,7 +23,7 @@ public class ManageEmployees_Window extends JFrame implements ActionListener {
 	JScrollPane spEmployees = new JScrollPane(listEmployees);
 
 	LinkedList linkedList = Login.list;
-
+	// constructor
 	public ManageEmployees_Window() {
 
 		super("Cafe Managemnt System -Employee Management-");
@@ -53,7 +54,6 @@ public class ManageEmployees_Window extends JFrame implements ActionListener {
 		btnEditStaff.addActionListener(this);
 
 	}
-
 	public void listEmployee(LinkedList list) {
 		Node current = linkedList.head;
 

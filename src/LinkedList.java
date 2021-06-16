@@ -1,16 +1,19 @@
-
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which implements LinkedList and methods pertaning to it
+*/
 public class LinkedList {
 	public Node head;
 	public Node tail;
-
+	// constructor
 	public LinkedList() {
 		head = null;
 	}
-
+	// checks wheather list is empty or not
 	public boolean isEmpty() {
 		return head == null;
 	}
-
+	// prints the entire list
 	public void outputList() {
 		Node current = head;
 
@@ -19,11 +22,11 @@ public class LinkedList {
 			current = current.next;
 		}
 	}
-
+	// insert new node to the list
 	public void insert(Employee employee) {
 		head = new Node(employee, head);
 	}
-
+	// removes the node from the list
 	public void delete(String key) {
 		Node current = head;
 		Node prev = null;

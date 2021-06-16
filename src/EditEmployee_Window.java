@@ -1,3 +1,7 @@
+/* 
+	Author: SDMCET-2020-2021-B5
+	Description: Class which edits the details of the existing employee
+*/
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;

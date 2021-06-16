@@ -1,3 +1,7 @@
+/*
+	Author: SDMCET-2020-2021-B5
+	Description: Class which implements Employee information
+*/  
 
 public class Employee {
 
