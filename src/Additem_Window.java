@@ -7,7 +7,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+/*Date: 29-05-2021
+Class:Additem_Window
+*/
 
+//Additem_Window class helps in adding the items using BST 
 public class Additem_Window extends JFrame implements ActionListener {
 	JTextField txtItemId;
 	JTextField txtItemName;
